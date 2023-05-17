@@ -4,7 +4,7 @@
 💻 Portfólio
 ============
 
-Projeto desenvolvido para os alunos da Kenzie Academy Brasil, com a finalidade de fornecer um portfólio profissional demonstrando de forma objetiva suas capacidades de técnicas e resolução de problemas, por meio de uma interface simples, moderna e intuitiva.
+Bem-vindo ao meu portfólio de projetos! Aqui você encontrará uma coleção dos projetos em que trabalhei, as tecnologias que domino e algumas informações sobre mim. Este repositório serve como um ponto central onde você pode explorar meu trabalho e aprender mais sobre minhas habilidades e experiências.
 
   
   

@@ -26,10 +26,11 @@ import {
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
 } from "./style";
+import { AboutMe } from "@/components/AboutMe";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portifolio`;
 
   return (
     <main id="home">
@@ -108,6 +109,7 @@ export const Home = (): JSX.Element => {
         </Container>
       </ProjectsArea>
       <Contacts />
+      <AboutMe />
     </main>
   );
 };
