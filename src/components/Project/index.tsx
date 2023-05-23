@@ -5,12 +5,19 @@ import {
   ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  CardLinksProjects,
+  ImageCardLinksProjects,
+  DivLinksProjectRender,
+  DivCardsLinksProjectRender,
 } from "./style";
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+
+import imagemKenzieHub from "../../public/static/img/logo/imagemKenzieHub.png"
+import imagemBurgerKenzie from "../../public/static/img/logo/imagemBurgerKenzie.png"
 
 interface ReposType {
   id: number;
@@ -91,6 +98,25 @@ export const Project = (): JSX.Element => {
             </ProjectLinks>
           </ProjectWrapper>
         ))}
+        <DivLinksProjectRender>
+          <Text as="h2" type="heading3" color="grey5">Links to my projects in Vercel</Text>
+          <DivCardsLinksProjectRender>
+            <CardLinksProjects>
+            <ImageCardLinksProjects src={imagemKenzieHub} alt="foto da KenzieHub" />
+              <Text as="p" color={"grey5"}>Kenzie Hub</Text>
+              <Text as="a" color={"brand1"} target="_blank"
+                  href={"https://kenzie-hub-hugo-raphael.vercel.app/"}>https://kenzie-hub-hugo-raphael.vercel.app</Text>
+            </CardLinksProjects>
+
+            <CardLinksProjects>
+              <ImageCardLinksProjects src={imagemBurgerKenzie} alt="foto da KenzieHub" />
+              <Text as="p" color={"grey5"}>Burger Kenzie</Text>
+              <Text as="a" color={"brand1"} target="_blank"
+                  href={"https://react-hamburgueria-hugo-raphael.vercel.app"}>https://react-hamburgueria-hugo-raphael.vercel.app</Text>
+            </CardLinksProjects>
+          </DivCardsLinksProjectRender>
+        </DivLinksProjectRender>
+
     </>
   );
 };

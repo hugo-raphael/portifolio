@@ -88,6 +88,7 @@ export const Home = (): JSX.Element => {
           </HeaderContent>
         </Container>
       </Header>
+      <AboutMe />
       <ProjectsArea id="projects">
         <Container>
           <ProjectAreaWrapperColumns>
@@ -109,7 +110,6 @@ export const Home = (): JSX.Element => {
         </Container>
       </ProjectsArea>
       <Contacts />
-      <AboutMe />
     </main>
   );
 };

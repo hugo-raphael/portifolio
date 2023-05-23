@@ -79,3 +79,46 @@ export const Project = styled("article", {
     },
   },
 });
+
+export const DivLinksProjectRender = styled("div", {
+  width: "100%",
+});
+
+export const DivCardsLinksProjectRender = styled("ul", {
+  marginTop: "4rem",
+  width: "100%",
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gridGap: "4rem",
+  "@mobile": {
+    gridTemplateColumns: "1fr",
+    overflow: "hidden",
+  },
+});
+
+export const CardLinksProjects = styled("li", {
+  width: "400px",
+  height: "250px",
+  padding: "20px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-around",
+  border: `2px solid ${'$grey2'}`,
+  borderRadius: "20px",
+
+  "@mobile": {
+    width: "auto",
+  },
+});
+
+
+export const ImageCardLinksProjects = styled("img", {
+  width: "100%",
+  height: "50%",
+  objectFit: "cover",
+  cursor: "pointer",
+
+  '&:hover': {
+    transform: 'scale(1.1)',
+  },
+})

@@ -1,12 +1,21 @@
 import { Container } from "@/styles/Global"
-import { AboutMeSection } from "./style"
+import { AboutMeSection, ImgAboutMe } from "./style"
 import { Text } from "@/styles/Text";
+import imgHugo from "../../public/static/img/logo/hugo.jpeg"
+import { userData } from "@/utils/userData";
 
 export const AboutMe = () => {
 
     return (
         <AboutMeSection id="sobre-mim">
             <Container>
+                <ImgAboutMe 
+                    src={imgHugo}
+                    alt={userData.nameUser}
+                    title={userData.nameUser}
+                    width={"200px"}
+                    height={"200px"}
+                />
                 <Text as="h6" type="heading3" color="grey5">
                     <Text as="span" type="heading3" color="brand1">
                     {" "}  Hello, {" "}
@@ -31,7 +40,7 @@ export const AboutMe = () => {
                     <Text as="span" type="heading3" color="brand1">
                         {" "} front-end {" "}
                     </Text> 
-                    front-end projects with pure 
+                    projects with pure 
                     <Text as="span" type="heading3" color="brand1">
                         {" "}  Javascript
                     </Text>
